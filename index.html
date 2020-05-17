@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div>
+        <!-- navbar -->
+        <nav class="h-auto p-4">
+            <div class="flex justify-end">
+                <button class="rounded">
+                    <img class="w-6 h-6 m-2" src="images/menu.png" alt="">
+                </button>
+            </div>
+        </nav>
+        <!-- main -->
+        <div class="bg h-auto px-4 py-6">
+            <!-- sales -->
+            <div class="flex flex-row">
+                <div class="w-3/5">
+                    <h1 class="text-green-200 text-lg font-bold">Total sales</h1>
+                    <h1 class="text-2xl text-white font-bold mt-2">$95050</h1>
+                </div>
+                <div class="w-2/5 flex justify-end">
+                    <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View all
+                        <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+                </div>
+            </div>
+            <div class="border-b border-green-300 mt-4"></div>
+            <!-- product -->
+            <div class="flex flex-row mt-4">
+                <div class="w-3/5">
+                    <h1 class="text-green-200 text-lg font-bold">Total product</h1>
+                    <h1 class="text-2xl text-white font-bold mt-2">1529</h1>
+                </div>
+                <div class="w-2/5 flex justify-end">
+                    <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View all
+                        <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+                </div>
+            </div>
+            <div class="border-b border-green-300 mt-4"></div>
+            <!-- invoice -->
+            <div class="flex flex-row mt-4">
+                <div class="w-3/5">
+                    <h1 class="text-green-200 text-lg font-bold">Total invoice</h1>
+                    <h1 class="text-2xl text-white font-bold mt-2">2290</h1>
+                </div>
+                <div class="w-2/5 flex justify-end">
+                    <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View all
+                        <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+                </div>
+            </div>
+        </div>
+
+        <!-- top sales -->
+        <div class="h-auto px-4 py-6">
+            <h1 class="text-green-700 text-lg font-bold">Top sales</h1>
+            <div class="flex flex-col">
+                <!-- one -->
+                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
+                    <div class="flex flex-row">
+                        <div class="w-1/2">
+                            <h1 class="font-medium">David Kemberley</h1>
+                            <h1 class="text-green-700 text-2xl font-bold">$7500</h1>
+                            <h5 class="text-gray-600">320 products sold</h5>
+                        </div>
+                        <div class="w-1/2 h-full flex justify-end">
+                            <img class=" w-12 h-auto" src="images/david.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-10 mt-4 -mx-6 -mb-4">
+                        <button class="flex justify-center bg-gray-100 h-full w-full text-gray-600">View
+                            sales <img class="h-2 w-2 mt-2 ml-2" src="images/gray-arrow.png" alt=""></button>
+                    </div>
+                </div>
+                <!-- two -->
+                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
+                    <div class="flex flex-row">
+                        <div class="w-1/2">
+                            <h1 class="font-medium">Tony Andrew</h1>
+                            <h2 class="text-green-700 text-2xl font-bold">$6305</h2>
+                            <h5 class="text-gray-600">240 products sold</h5>
+                        </div>
+                        <div class="w-1/2 h-full flex justify-end">
+                            <img class=" w-12 h-auto" src="images/tony.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-10 mt-4 -mx-6 -mb-4">
+                        <button class="flex justify-center bg-gray-100 h-full w-full text-gray-600">View
+                            sales <img class="h-2 w-2 mt-2 ml-2" src="images/gray-arrow.png" alt=""></button>
+                    </div>
+                </div>
+                <!-- three -->
+                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
+                    <div class="flex flex-row">
+                        <div class="w-1/2">
+                            <h1 class="font-medium">Matthew Phil</h1>
+                            <h1 class="text-green-700 text-2xl font-bold">$4209</h1>
+                            <h5 class="text-gray-600">194 products sold</h5>
+                        </div>
+                        <div class="w-1/2 h-full flex justify-end">
+                            <img class=" w-12 h-auto" src="images/matthew.png" alt="">
+                        </div>
+                    </div>
+                    <div class="h-10 mt-4 -mx-6 -mb-4">
+                        <button class="flex justify-center bg-gray-100 h-full w-full text-gray-600">View
+                            sales <img class="h-2 w-2 mt-2 ml-2" src="images/gray-arrow.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- All sales -->
+        <div class="h-auto px-4 py-6 mb-6">
+            <h1 class="text-green-700 text-lg font-bold">All sales</h1>
+            <div class="rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
+                <div class="flex flex-row bg-gray-200 -mx-6 -mt-4 border-b border-gray-300">
+                    <div class="w-1/2 px-6 py-2">
+                        <h1>Seller</h1>
+                    </div>
+                    <div class="w-1/2 px-6 py-2">
+                        <h1>Amount</h1>
+                    </div>
+                </div>
+
+                <!-- sellers -->
+                <div class="flex flex-col mt-4">
+                    <div class="flex flex-row border-b border-gray-300 pb-4">
+                        <div class="w-3/5">
+                            <h1>Lanny O'con</h1>
+                        </div>
+                        <div class="w-1/5">
+                            <h1>$900</h1>
+                        </div>
+                        <div class="w-1/5 flex justify-end">
+                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
+                        <div class="w-3/5">
+                            <h1>Peter Pan</h1>
+                        </div>
+                        <div class="w-1/5">
+                            <h1>$1300</h1>
+                        </div>
+                        <div class="w-1/5 flex justify-end">
+                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
+                        <div class="w-3/5">
+                            <h1>Armeni Geni</h1>
+                        </div>
+                        <div class="w-1/5">
+                            <h1>$400</h1>
+                        </div>
+                        <div class="w-1/5 flex justify-end">
+                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
+                        <div class="w-3/5">
+                            <h1>Seth Beckem</h1>
+                        </div>
+                        <div class="w-1/5">
+                            <h1>$220</h1>
+                        </div>
+                        <div class="w-1/5 flex justify-end">
+                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
+                        <div class="w-3/5">
+                            <h1>David Fessel</h1>
+                        </div>
+                        <div class="w-1/5">
+                            <h1>$64</h1>
+                        </div>
+                        <div class="w-1/5 flex justify-end">
+                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row pb-2 mt-4">
+                        <div class="w-3/5">
+                            <h1>Maggen Keth</h1>
+                        </div>
+                        <div class="w-1/5">
+                            <h1>$3090</h1>
+                        </div>
+                        <div class="w-1/5 flex justify-end">
+                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        body {
+            background-color: #F6FDFA;
+        }
+
+        .bg {
+            background-color: #69B392;
+        }
+    </style>
+</body>
+
+</html>
