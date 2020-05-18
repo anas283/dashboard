@@ -9,60 +9,93 @@
 </head>
 
 <body>
+    <div id="mySidenav" class="sidenav visible lg:invisible">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Sales</a>
+        <a href="#">Products</a>
+        <a href="#">Invoice</a>
+
+        <div class="flex flex-row bg-gray-100 mt-6 px-2">
+            <div class="w-1/5 py-4 pl-4">
+                <img class="w-24 h-auto" src="images/admin.png" alt="">
+            </div>
+            <div class="w-4-5 p-4">
+                <h1 class="text-lg text-left font-bold">David</h1>
+                <h1>david@yahoo.com</h1>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
     <div>
         <!-- navbar -->
         <nav class="h-auto p-4">
             <div class="flex justify-end">
-                <button class="rounded">
+                <button onclick="openNav()" class="rounded">
                     <img class="w-6 h-6 m-2" src="images/menu.png" alt="">
                 </button>
             </div>
         </nav>
         <!-- main -->
-        <div class="bg h-auto px-4 py-6">
-            <!-- sales -->
-            <div class="flex flex-row">
-                <div class="w-3/5">
-                    <h1 class="text-green-200 text-lg font-bold">Total sales</h1>
-                    <h1 class="text-2xl text-white font-bold mt-2">$95050</h1>
+        <div class="bg-green-500 h-auto px-6 py-6 sm:flex sm:flex-col">
+            <div class="h-auto sm:w-full sm:flex sm:flex-row">
+                <!-- sales -->
+                <div class="flex flex-row sm:w-1/2 sm:px-2">
+                    <div class="w-3/5">
+                        <h1 class="text-green-200 text-lg">Total sales</h1>
+                        <h1 class="text-2xl text-white font-bold mt-2">$95050</h1>
+                    </div>
+                    <div class="w-2/5 flex justify-end">
+                        <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View
+                            all
+                            <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+                    </div>
                 </div>
-                <div class="w-2/5 flex justify-end">
-                    <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View all
-                        <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+                <!-- product -->
+                <div class="flex flex-row mt-4 sm:mt-0 sm:w-1/2 sm:px-2">
+                    <div class="w-3/5">
+                        <h1 class="text-green-200 text-lg">Total product</h1>
+                        <h1 class="text-2xl text-white font-bold mt-2">1529</h1>
+                    </div>
+                    <div class="w-2/5 flex justify-end">
+                        <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View
+                            all
+                            <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+                    </div>
                 </div>
             </div>
-            <div class="border-b border-green-300 mt-4"></div>
-            <!-- product -->
-            <div class="flex flex-row mt-4">
-                <div class="w-3/5">
-                    <h1 class="text-green-200 text-lg font-bold">Total product</h1>
-                    <h1 class="text-2xl text-white font-bold mt-2">1529</h1>
-                </div>
-                <div class="w-2/5 flex justify-end">
-                    <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View all
-                        <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
-                </div>
-            </div>
-            <div class="border-b border-green-300 mt-4"></div>
-            <!-- invoice -->
-            <div class="flex flex-row mt-4">
-                <div class="w-3/5">
-                    <h1 class="text-green-200 text-lg font-bold">Total invoice</h1>
-                    <h1 class="text-2xl text-white font-bold mt-2">2290</h1>
-                </div>
-                <div class="w-2/5 flex justify-end">
-                    <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View all
-                        <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+            <div class="sm:mt-4">
+                <!-- invoice -->
+                <div class="flex flex-row mt-4 sm:mt-0 sm:w-1/2 sm:px-2">
+                    <div class="w-3/5">
+                        <h1 class="text-green-200 text-lg">Total invoice</h1>
+                        <h1 class="text-2xl text-white font-bold mt-2">2290</h1>
+                    </div>
+                    <div class="w-2/5 flex justify-end">
+                        <button class="flex flex-row px-2 pl-4 w-24 h-10 mt-6 rounded-md bg-green-600 text-white">View
+                            all
+                            <img class="h-2 w-2 mt-2 ml-2" src="images/right-arrow.png" alt=""></button>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- top sales -->
-        <div class="h-auto px-4 py-6">
+        <div class="h-auto px-4 py-6 sm:px-6 sm:flex sm:flex-col">
             <h1 class="text-green-700 text-lg font-bold">Top sales</h1>
-            <div class="flex flex-col">
+            <div class="h-auto sm:w-full sm:flex sm:flex-row">
                 <!-- one -->
-                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
+                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4 sm:w-1/2 sm:mr-4">
                     <div class="flex flex-row">
                         <div class="w-1/2">
                             <h1 class="font-medium">David Kemberley</h1>
@@ -70,7 +103,7 @@
                             <h5 class="text-gray-600">320 products sold</h5>
                         </div>
                         <div class="w-1/2 h-full flex justify-end">
-                            <img class=" w-12 h-auto" src="images/david.png" alt="">
+                            <img class="w-12 h-auto" src="images/david.png" alt="">
                         </div>
                     </div>
                     <div class="h-10 mt-4 -mx-6 -mb-4">
@@ -78,8 +111,9 @@
                             sales <img class="h-2 w-2 mt-2 ml-2" src="images/gray-arrow.png" alt=""></button>
                     </div>
                 </div>
+
                 <!-- two -->
-                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
+                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4 sm:w-1/2 sm:ml-4">
                     <div class="flex flex-row">
                         <div class="w-1/2">
                             <h1 class="font-medium">Tony Andrew</h1>
@@ -87,7 +121,7 @@
                             <h5 class="text-gray-600">240 products sold</h5>
                         </div>
                         <div class="w-1/2 h-full flex justify-end">
-                            <img class=" w-12 h-auto" src="images/tony.png" alt="">
+                            <img class="w-12 h-12" src="images/tony.png" alt="">
                         </div>
                     </div>
                     <div class="h-10 mt-4 -mx-6 -mb-4">
@@ -96,7 +130,9 @@
                     </div>
                 </div>
                 <!-- three -->
-                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
+            </div>
+            <div class="sm:mt-2 h-auto sm:w-full sm:flex sm:flex-row">
+                <div class="flex flex-col rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4 sm:w-1/2 sm:mr-4">
                     <div class="flex flex-row">
                         <div class="w-1/2">
                             <h1 class="font-medium">Matthew Phil</h1>
@@ -104,13 +140,16 @@
                             <h5 class="text-gray-600">194 products sold</h5>
                         </div>
                         <div class="w-1/2 h-full flex justify-end">
-                            <img class=" w-12 h-auto" src="images/matthew.png" alt="">
+                            <img class="w-12 h-auto" src="images/matthew.png" alt="">
                         </div>
                     </div>
                     <div class="h-10 mt-4 -mx-6 -mb-4">
                         <button class="flex justify-center bg-gray-100 h-full w-full text-gray-600">View
                             sales <img class="h-2 w-2 mt-2 ml-2" src="images/gray-arrow.png" alt=""></button>
                     </div>
+                </div>
+                <div class="invisible h-auto w-full sm:visible md:invisible py-4 px-6 mt-4 sm:w-1/2 sm:ml-4">
+                    <h1 class="invisible">Empty</h1>
                 </div>
             </div>
         </div>
@@ -213,6 +252,41 @@
 
         .bg {
             background-color: #69B392;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: white;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            text-align: center;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #000000;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #a8a8a8
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
         }
     </style>
 </body>
