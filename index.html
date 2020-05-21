@@ -16,13 +16,15 @@
         <a href="#">Products</a>
         <a href="#">Invoice</a>
 
-        <div class="flex flex-row bg-gray-100 mt-6 px-2">
-            <div class="w-1/5 py-4 pl-4">
-                <img class="w-16 h-16" src="images/admin.png" alt="">
-            </div>
-            <div class="w-4-5 p-4">
-                <h1 class="text-lg text-left font-bold">Anas</h1>
-                <h1>muhammadanasbinadam@gmail.com</h1>
+        <div class="flex justify-center bg-gray-100 mt-6 px-2">
+            <div class="flex flex-row">
+                <div class="w-20 py-4 pl-4 bg-teal-100">
+                    <img class="w-12 h-12" src="images/admin.png" alt="">
+                </div>
+                <div class="w-4-5 p-4">
+                    <h1 class="text-lg text-left font-bold">Anas</h1>
+                    <h1>muhammadanasbinadam@gmail.com</h1>
+                </div>
             </div>
         </div>
     </div>
@@ -40,7 +42,7 @@
     <div>
         <!-- navbar -->
         <nav class="h-auto w-auto p-2 max-w-screen-lg sm:mx-auto">
-            <div class="flex justify-end sm:invisible sm:h-0 sm:w-0">
+            <div class="flex justify-end sm:invisible sm:h-0 sm:w-0 -mb-2">
                 <button onclick="openNav()" class="rounded">
                     <img class="w-6 h-6 m-2" src="images/menu.png" alt="">
                 </button>
@@ -173,89 +175,256 @@
         </div>
 
         <!-- All sales -->
-        <div class="h-auto px-4 py-6 mb-4 max-w-screen-lg sm:mx-auto">
-            <h1 class="text-green-700 text-lg font-bold">All sales</h1>
+        <div class="h-auto px-4 pt-6 pb-12 mb-4 max-w-screen-lg sm:mx-auto">
+            <h1 class="text-green-700 text-lg font-bold ml-2">All sales</h1>
             <div class="rounded-lg h-auto w-full bg-white shadow-lg py-4 px-6 mt-4">
                 <div class="flex flex-row bg-gray-200 -mx-6 -mt-4 border-b border-gray-300">
-                    <div class="w-1/2 px-6 py-2">
-                        <h1>Seller</h1>
+                    <div class="w-3/5 md:w-1/3 px-6 py-2">
+                        <h1 class="text-gray-600 text-sm uppercase">Seller</h1>
                     </div>
-                    <div class="w-1/2 px-6 py-2">
-                        <h1>Amount</h1>
+                    <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-2">
+                        <h1 class="text-gray-600 text-sm uppercase">Sold date</h1>
                     </div>
+                    <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                        <h1 class="text-gray-600 text-sm uppercase">Product</h1>
+                    </div>
+                    <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                        <h1 class="text-gray-600 text-sm uppercase">Amount</h1>
+                    </div>
+                    <div class="w-0 md:w-1/6"></div>
                 </div>
 
                 <!-- sellers -->
                 <div class="flex flex-col mt-4">
-                    <div class="flex flex-row border-b border-gray-300 pb-4">
-                        <div class="w-3/5">
-                            <h1>Lanny O'con</h1>
+                    <div class="flex flex-row border-b border-gray-300">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>Lanny O'con</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    lannyocon@mail.com
+                                </h2>
+                            </div>
                         </div>
-                        <div class="w-1/5">
-                            <h1>$900</h1>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">01 Jan 2020</h1>
                         </div>
-                        <div class="w-1/5 flex justify-end">
-                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Utilities</h1>
                         </div>
-                    </div>
-
-                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
-                        <div class="w-3/5">
-                            <h1>Peter Pan</h1>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$900</h1>
                         </div>
-                        <div class="w-1/5">
-                            <h1>$1300</h1>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
                         </div>
-                        <div class="w-1/5 flex justify-end">
-                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
-                        </div>
-                    </div>
-
-                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
-                        <div class="w-3/5">
-                            <h1>Armeni Geni</h1>
-                        </div>
-                        <div class="w-1/5">
-                            <h1>$400</h1>
-                        </div>
-                        <div class="w-1/5 flex justify-end">
-                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
                         </div>
                     </div>
 
-                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
-                        <div class="w-3/5">
-                            <h1>Seth Beckem</h1>
+                    <div class="flex flex-row border-b border-gray-300 mt-2">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>Peter Dan</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    peterdan@mail.com
+                                </h2>
+                            </div>
                         </div>
-                        <div class="w-1/5">
-                            <h1>$220</h1>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">03 Jan 2020</h1>
                         </div>
-                        <div class="w-1/5 flex justify-end">
-                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Cosmetics</h1>
+                        </div>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$1300</h1>
+                        </div>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
+                        </div>
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
                         </div>
                     </div>
 
-                    <div class="flex flex-row border-b border-gray-300 pb-4 mt-4">
-                        <div class="w-3/5">
-                            <h1>David Fessel</h1>
+                    <div class="flex flex-row border-b border-gray-300 mt-2">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>Armeni Geni</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    armenigeni@mail.com
+                                </h2>
+                            </div>
                         </div>
-                        <div class="w-1/5">
-                            <h1>$64</h1>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">05 Jan 2020</h1>
                         </div>
-                        <div class="w-1/5 flex justify-end">
-                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Utilities</h1>
+                        </div>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$400</h1>
+                        </div>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
+                        </div>
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
                         </div>
                     </div>
 
-                    <div class="flex flex-row pb-2 mt-4">
-                        <div class="w-3/5">
-                            <h1>Maggen Keth</h1>
+                    <div class="flex flex-row border-b border-gray-300 mt-2">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>Seth Beckem</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    sethbeckem@mail.com
+                                </h2>
+                            </div>
                         </div>
-                        <div class="w-1/5">
-                            <h1>$3090</h1>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">10 Jan 2020</h1>
                         </div>
-                        <div class="w-1/5 flex justify-end">
-                            <img class="h-2 w-2 mt-2" src="images/gray-arrow.png" alt="">
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Utilities</h1>
+                        </div>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$220</h1>
+                        </div>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
+                        </div>
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row border-b border-gray-300 mt-2">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>David Fessel</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    davidfessel@mail.com
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">01 Feb 2020</h1>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Electronics</h1>
+                        </div>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$64</h1>
+                        </div>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
+                        </div>
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row border-b border-gray-300 mt-2">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>Magget Keth</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    maggetketh@mail.com
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">06 Jan 2020</h1>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Toys</h1>
+                        </div>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$3090</h1>
+                        </div>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
+                        </div>
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row border-b border-gray-300 mt-2">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>Sammy Coil</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    sammycoil@mail.com
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">08 Feb 2020</h1>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Decorations</h1>
+                        </div>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$450</h1>
+                        </div>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
+                        </div>
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="flex flex-row  mt-2">
+                        <div class="w-3/5 md:w-1/3 md:flex md:flex-row py-2 md:-mt-2">
+                            <div class="invisible w-0 h-0 md:visible md:w-auto md:h-auto">
+                                <img class="im w-10 h-10" src="images/admin.png" alt="">
+                            </div>
+                            <div class="mx-0 md:mx-4">
+                                <h1>Edmand Snow</h1>
+                                <h2 class="invisible h-0 md:visible md:h-auto text-gray-600">
+                                    edmandsnow@mail.com
+                                </h2>
+                            </div>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-4 md:py-2">
+                            <h1 class="text-sm">13 Feb 2020</h1>
+                        </div>
+                        <div class="invisible w-0 md:visible md:w-1/6 md:px-6 md:py-2 md:px-0">
+                            <h1 class="text-sm">Utilities</h1>
+                        </div>
+                        <div class="w-1/5 px-0 md:w-1/6 md:px-6 py-2 md:px-0">
+                            <h1 class="ml-2">$120</h1>
+                        </div>
+                        <div class="invisible md:visible w-0 h-0 md:w-1/6 md:h-auto flex justify-center">
+                            <button class="h-8 text-sm text-green-700 font-medium">View sales</button>
+                        </div>
+                        <div class="w-1/5 flex justify-end md:w-0">
+                            <img class="h-2 w-2 mt-4" src="images/gray-arrow.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -305,6 +474,10 @@
             right: 25px;
             font-size: 36px;
             margin-left: 50px;
+        }
+
+        .im {
+            margin-top: 0.3em;
         }
     </style>
 </body>
